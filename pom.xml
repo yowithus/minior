@@ -7,6 +7,30 @@
     <groupId>com.example</groupId>
     <artifactId>minior</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>minior</name>
+    <description>Containing Java library collections</description>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <target>1.8</target>
+                    <source>1.8</source>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>1.4.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>
